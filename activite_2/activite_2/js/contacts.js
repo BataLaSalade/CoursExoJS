@@ -45,8 +45,6 @@ function afficherContact () {
 
 // 2 - creer un nouveau contact
 function creerContact(prenomContact, nomContact) {
-    userAddPrenom = prenomContact;
-    userAddNom = nomContact;
     var nouveauContact = Object.create(Contact);
     nouveauContact.init(prenomContact, nomContact);
     contacts.push(nouveauContact);
